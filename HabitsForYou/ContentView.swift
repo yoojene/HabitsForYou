@@ -19,7 +19,7 @@ struct ContentView: View {
             List {
                 ForEach(habits.habits) { habit in
                     NavigationLink {
-                        HabitDetail(habitItem: habit, habits: habits)
+                        HabitDetailView(habitItem: habit, habits: habits)
                     } label : {
                         Text(habit.title)
                     }
@@ -52,69 +52,7 @@ struct ContentView: View {
 }
 
 
-struct HabitDetail: View {
-    
-    var habitItem: HabitItem
-    @ObservedObject var habits: Habits
 
-
-    @State private var timesDone = 0
-    
-    var body: some View {
-        
-        Section {
-            List  {
-                
-                HStack{
-                    VStack() {
-                        Text("Title")
-                            .font(.headline)
-                        
-                    }
-                    Spacer()
-                    Text(habitItem.title)
-                    
-                }
-                HStack  {
-                    VStack(alignment: .leading){
-                        Text("Description")
-                            .font(.headline)
-                    }
-                    Spacer()
-                    Text(habitItem.description)
-
-                }
-                
-                HStack  {
-                    VStack {
-                        Button("Add Completion") {
-                            timesDone += 1
-                            var habitsCopy = habitItem
-                            habitsCopy.completionAmount = timesDone
-                            if let i = habits.habits.firstIndex(of: habitItem) {
-                                habits.habits[i] = habitsCopy
-                            }
-                            
-                        }
-                    }
-                    
-                    TextField("Times done", value: $timesDone, format: .number)
-                        .multilineTextAlignment(.trailing)
-                }
-              
-                
-                
-            }
-            .navigationTitle("Habit Details")
-            .onAppear {
-                timesDone = habitItem.completionAmount
-                
-            }
-            
-        }
-
-    }
-}
 
 
 struct ContentView_Previews: PreviewProvider {

@@ -14,6 +14,7 @@
 		44DE9D8D2A9DF33D00475B35 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE9D8C2A9DF33D00475B35 /* AddHabitView.swift */; };
 		44DE9D902A9DF34200475B35 /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE9D8E2A9DF34200475B35 /* HabitItem.swift */; };
 		44DE9D912A9DF34200475B35 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE9D8F2A9DF34200475B35 /* Habits.swift */; };
+		44DE9D932A9E4D7200475B35 /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE9D922A9E4D7200475B35 /* HabitDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		44DE9D8C2A9DF33D00475B35 /* AddHabitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 		44DE9D8E2A9DF34200475B35 /* HabitItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
 		44DE9D8F2A9DF34200475B35 /* Habits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
+		44DE9D922A9E4D7200475B35 /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				44DE9D7C2A9DF31200475B35 /* HabitsForYouApp.swift */,
 				44DE9D8A2A9DF33600475B35 /* ContentView.swift */,
+				44DE9D922A9E4D7200475B35 /* HabitDetailView.swift */,
 				44DE9D8C2A9DF33D00475B35 /* AddHabitView.swift */,
 				44DE9D802A9DF31300475B35 /* Assets.xcassets */,
 				44DE9D8E2A9DF34200475B35 /* HabitItem.swift */,
@@ -151,6 +154,7 @@
 				44DE9D902A9DF34200475B35 /* HabitItem.swift in Sources */,
 				44DE9D7D2A9DF31200475B35 /* HabitsForYouApp.swift in Sources */,
 				44DE9D8D2A9DF33D00475B35 /* AddHabitView.swift in Sources */,
+				44DE9D932A9E4D7200475B35 /* HabitDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
