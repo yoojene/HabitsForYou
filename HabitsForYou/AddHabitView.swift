@@ -30,7 +30,7 @@ struct AddHabitView: View {
                     
                     
                     if title != "" || description != "" {
-                        let habitItem = HabitItem(title: title, description: description)
+                        let habitItem = HabitItem(title: title, description: description, completionAmount: 0)
                         habits.habits.append(habitItem)
                     }
               
